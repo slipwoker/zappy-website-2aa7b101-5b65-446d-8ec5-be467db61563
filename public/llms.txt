@@ -24,6 +24,10 @@ https://example.com/contact
 https://example.com/team
 משרד עורך דין משה זדה - הצוות | משרד עורך דין משה זדה
 
+### מחלקה אסטרטגית עסקית | משרד עורך דין משה זדה
+https://example.com/business-strategy
+משרד עורך דין משה זדה - מחלקה אסטרטגית עסקית | משרד עורך דין משה זדה
+
 ## Legal & Policy
 
 ### Privacy Policy
