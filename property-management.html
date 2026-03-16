@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <title>הצוות | משרד עורך דין משה זדה</title>
-    <meta name="description" content="משרד עורך דין משה זדה - הצוות | משרד עורך דין משה זדה">
+    <title>מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה</title>
+    <meta name="description" content="משרד עורך דין משה זדה - מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה">
     <meta name="keywords" content="">
     
     <!-- Favicons -->
@@ -236,35 +236,33 @@
 
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="article">
-    <meta property="og:title" content="הצוות | משרד עורך דין משה זדה">
-    <meta property="og:description" content="משרד עורך דין משה זדה - הצוות | משרד עורך דין משה זדה">
-    <meta property="og:image" content="assets/section-hero-team-hero-portrait-og.jpg">
+    <meta property="og:title" content="מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה">
+    <meta property="og:description" content="משרד עורך דין משה זדה - מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה">
+    <meta property="og:image" content="assets/section-hero-property-management-hero-bg-og.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:alt" content="הצוות | משרד עורך דין משה זדה">
+    <meta property="og:image:alt" content="מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה">
     <meta property="og:locale" content="he_IL">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="הצוות | משרד עורך דין משה זדה">
-    <meta name="twitter:description" content="משרד עורך דין משה זדה - הצוות | משרד עורך דין משה זדה">
-    <meta name="twitter:image" content="assets/section-hero-team-hero-portrait-og.jpg">
-    <meta name="twitter:image:alt" content="הצוות | משרד עורך דין משה זדה"><style id="zappy-ai-page-styles">.team-hero-section {
+    <meta name="twitter:title" content="מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה">
+    <meta name="twitter:description" content="משרד עורך דין משה זדה - מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה">
+    <meta name="twitter:image" content="assets/section-hero-property-management-hero-bg-og.jpg">
+    <meta name="twitter:image:alt" content="מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה"><style id="zappy-ai-page-styles">.property-management-hero-section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  overflow: visible;
-  background-color: #0E1117;
-  background-image: linear-gradient(180deg, #0E1117 0%, #07090D 100%);
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 96px 16px 72px;
+  overflow: visible;
+  background-color: #0E1117;
   direction: rtl;
+  color: var(--text-light);
 }
 
 /* Background Image Layer */
-.team-hero-section .team-hero-bg-wrapper {
+.property-management-hero-section__bg-layer {
   position: absolute;
   top: 0;
   left: 0;
@@ -274,7 +272,7 @@
   overflow: hidden;
 }
 
-.team-hero-section .team-hero-bg-image {
+.property-management-hero-section__bg-layer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -282,8 +280,8 @@
   display: block;
 }
 
-/* Scrim Overlay */
-.team-hero-section .team-hero-scrim {
+/* Scrim Overlay - Gradient for Text Legibility */
+.property-management-hero-section__scrim {
   position: absolute;
   top: 0;
   left: 0;
@@ -291,95 +289,108 @@
   height: 100%;
   z-index: 1;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(7,9,13,0.15) 0%, rgba(7,9,13,0.92) 100%);
+  background-image: linear-gradient(180deg, rgba(7,9,13,0.25) 0%, rgba(7,9,13,0.88) 60%, rgba(7,9,13,0.95) 100%);
 }
 
-/* Content Wrapper */
-.team-hero-section .team-hero-content-wrapper {
+/* Content Container */
+.property-management-hero-section__container {
   position: relative;
   z-index: 10;
   width: 100%;
-  max-width: 1120px;
+  max-width: 1160px;
   margin: 0 auto;
-}
-
-.team-hero-section .team-hero-container {
-  width: 100%;
+  padding: 96px 24px 72px;
 }
 
 /* Two-Column Grid */
-.team-hero-section .team-hero-grid {
+.property-management-hero-section__grid {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 5fr 7fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
   direction: rtl;
 }
 
-/* Text Block (Right Column) */
-.team-hero-section .team-hero-text-block {
-  text-align: right;
-  color: var(--text-light);
+/* Right Column: Text Content (Primary) */
+.property-management-hero-section__text-column {
+  position: relative;
+  grid-column: 2;
 }
 
-.team-hero-section .team-hero-headline {
+/* Decorative Cyan Keyline */
+.property-management-hero-section__keyline {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 0%, #00D4FF 20%, #00D4FF 80%, transparent 100%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.property-management-hero-section__text-content {
+  padding-inline-end: 32px;
+}
+
+.property-management-hero-section__headline {
   font-family: 'Sora', 'Inter', system-ui, sans-serif;
   font-size: 56px;
   font-weight: 800;
   letter-spacing: -0.01em;
   line-height: 1.05;
   color: rgba(243,245,247,0.96);
-  text-shadow: 0 2px 0 rgba(0,0,0,0.55), 0 18px 42px rgba(0,0,0,0.55);
+  text-align: right;
   margin: 0 0 24px 0;
+  text-shadow: 0 2px 0 rgba(0,0,0,0.55), 0 18px 42px rgba(0,0,0,0.55);
 }
 
-.team-hero-section .team-hero-subtitle {
+.property-management-hero-section__subtitle {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 0.00em;
   line-height: 1.25;
   color: rgba(243,245,247,0.92);
-  margin: 0 0 32px 0;
-  max-width: 540px;
+  text-align: right;
+  margin: 0 0 36px 0;
+  max-width: 580px;
 }
 
-/* CTA Group */
-.team-hero-section .team-hero-cta-group {
+/* CTA Button Group */
+.property-management-hero-section__cta-group {
   display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: flex-start;
   flex-direction: row-reverse;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.team-hero-section .team-hero-btn-primary {
-  background: var(--primary);
-  color: #061014;
+.property-management-hero-section__btn-primary {
+  background: #00D4FF;
+  color: #0B0D12;
   padding: 14px 28px;
   border-radius: 2px;
-  border: 1px solid rgba(0,0,0,0.30);
+  border: 1px solid rgba(0,0,0,0.35);
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   box-shadow: 0 10px 24px rgba(0,0,0,0.35);
   transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
-  cursor: pointer;
+  text-align: center;
 }
 
-.team-hero-section .team-hero-btn-primary:hover {
+.property-management-hero-section__btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 32px rgba(0,212,255,0.35);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.45);
   background: #00E8FF;
 }
 
-.team-hero-section .team-hero-btn-secondary {
+.property-management-hero-section__btn-secondary {
   background: transparent;
   color: rgba(243,245,247,0.92);
   border: 1px solid rgba(255,255,255,0.16);
@@ -391,507 +402,672 @@
   letter-spacing: 0.02em;
   line-height: 1;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 220ms ease, border-color 220ms ease, background-color 220ms ease;
-  cursor: pointer;
+  display: inline-block;
+  transition: background-color 220ms ease, border-color 220ms ease, color 220ms ease;
+  text-align: center;
 }
 
-.team-hero-section .team-hero-btn-secondary:hover {
-  border-color: var(--primary);
-  background: rgba(0,212,255,0.08);
-  transform: translateY(-2px);
+.property-management-hero-section__btn-secondary:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.28);
+  color: #FFFFFF;
 }
 
-/* Portrait Column (Left) */
-.team-hero-section .team-hero-portrait-column {
+/* Left Column: Brief Card Stack */
+.property-management-hero-section__cards-column {
+  grid-column: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.team-hero-section .team-hero-portrait-tile {
-  width: 100%;
-  max-width: 360px;
-}
-
-.team-hero-section .team-hero-portrait-frame {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  background: #07090D;
+.property-management-hero-section__brief-card {
+  background: rgba(14,17,23,0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border: 1px solid var(--border-dark);
   border-radius: 2px;
-  overflow: hidden;
-  box-shadow: inset 0 0 40px rgba(0,212,255,0.08), 0 26px 70px rgba(0,0,0,0.65);
+  padding: 20px 24px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), inset 0 -1px 0 rgba(0,0,0,0.55);
 }
 
-.team-hero-section .team-hero-portrait-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+.property-management-hero-section__card-title {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.00em;
+  line-height: 1.25;
+  color: rgba(243,245,247,0.92);
+  text-align: right;
+  margin: 0 0 8px 0;
 }
 
-/* Corner Markers */
-.team-hero-section .team-hero-corner-tl,
-.team-hero-section .team-hero-corner-br {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  pointer-events: none;
+.property-management-hero-section__card-text {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: rgba(174,182,193,0.92);
+  text-align: right;
+  margin: 0;
 }
 
-.team-hero-section .team-hero-corner-tl {
-  top: 12px;
-  right: 12px;
-  border-top: 2px solid var(--primary);
-  border-right: 2px solid var(--primary);
-  opacity: 0.65;
-}
-
-.team-hero-section .team-hero-corner-br {
-  bottom: 12px;
-  left: 12px;
-  border-bottom: 2px solid var(--primary);
-  border-left: 2px solid var(--primary);
-  opacity: 0.65;
-}
-
-/* Bottom Divider */
-.team-hero-section .team-hero-divider-wrapper {
+/* Bottom Divider Wrapper */
+.property-management-hero-section__divider-wrapper {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1px;
+  height: 2px;
   pointer-events: none;
   z-index: 5;
 }
 
-.team-hero-section .team-hero-divider-wrapper svg {
+.property-management-hero-section__divider-wrapper svg {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-/* Tablet Adjustments */
-@media (max-width: 1024px) {
-  .team-hero-section .team-hero-grid {
-    grid-template-columns: 55% 45%;
-    gap: 32px;
-  }
-
-  .team-hero-section .team-hero-headline {
-    font-size: 44px;
-  }
-
-  .team-hero-section .team-hero-subtitle {
-    font-size: 18px;
-  }
-}
-
-/* Mobile Styles */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-  .team-hero-section {
+  .property-management-hero-section {
     min-height: auto;
+  }
+
+  .property-management-hero-section__container {
     padding: 100px 16px 56px;
   }
 
-  .team-hero-section .team-hero-grid {
-    grid-template-columns: 1fr !important;
+  .property-management-hero-section__grid {
+    grid-template-columns: 1fr;
     gap: 32px;
   }
 
-  .team-hero-section .team-hero-text-block {
-    order: 2;
+  .property-management-hero-section__text-column {
+    grid-column: 1;
   }
 
-  .team-hero-section .team-hero-portrait-column {
-    order: 1;
+  .property-management-hero-section__cards-column {
+    grid-column: 1;
   }
 
-  .team-hero-section .team-hero-headline {
+  .property-management-hero-section__keyline {
+    display: none;
+  }
+
+  .property-management-hero-section__text-content {
+    padding-inline-end: 0;
+  }
+
+  .property-management-hero-section__headline {
     font-size: 36px;
+    line-height: 1.1;
     margin-bottom: 16px;
   }
 
-  .team-hero-section .team-hero-subtitle {
+  .property-management-hero-section__subtitle {
     font-size: 16px;
+    line-height: 1.4;
     margin-bottom: 24px;
-    max-width: 100%;
   }
 
-  .team-hero-section .team-hero-cta-group {
+  .property-management-hero-section__cta-group {
     flex-direction: column;
+    align-items: stretch;
     gap: 12px;
+  }
+
+  .property-management-hero-section__btn-primary,
+  .property-management-hero-section__btn-secondary {
     width: 100%;
+    text-align: center;
   }
 
-  .team-hero-section .team-hero-btn-primary,
-  .team-hero-section .team-hero-btn-secondary {
-    width: 100%;
-    padding: 14px 20px;
+  .property-management-hero-section__brief-card {
+    padding: 16px 20px;
   }
 
-  .team-hero-section .team-hero-portrait-tile {
-    max-width: 280px;
+  .property-management-hero-section__card-title {
+    font-size: 18px;
   }
 
-  .team-hero-section .team-hero-corner-tl,
-  .team-hero-section .team-hero-corner-br {
-    width: 24px;
-    height: 24px;
-  }
-
-  .team-hero-section .team-hero-corner-tl {
-    top: 8px;
-    right: 8px;
-  }
-
-  .team-hero-section .team-hero-corner-br {
-    bottom: 8px;
-    left: 8px;
+  .property-management-hero-section__card-text {
+    font-size: 14px;
   }
 }
 
-.team-about-section {
+.property-management-features-section {
+  position: relative;
   background: var(--bg-light);
   color: var(--text-dark);
   padding: 80px 16px;
-  position: relative;
   overflow: visible;
   direction: rtl;
 }
 
-.team-about-section .team-about-container {
-  max-width: 1120px;
+.property-management-features-container {
+  max-width: 1160px;
   margin: 0 auto;
 }
 
-.team-about-section .team-about-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 48px;
-  align-items: start;
+.property-management-features-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 720px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 }
 
-/* Key Points Panel */
-.team-about-section .team-about-keypoints {
-  order: 2;
-}
-
-.team-about-section .keypoints-card {
-  background: #FFFFFF;
-  border: 1px solid var(--border-light);
-  border-radius: 2px;
-  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.08);
-  padding: 32px 28px;
-  position: relative;
-  overflow: hidden;
-}
-
-.team-about-section .keypoints-accent {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--primary);
-}
-
-.team-about-section .keypoints-content {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-
-.team-about-section .keypoint-item {
-  text-align: right;
-}
-
-.team-about-section .keypoint-item h3 {
-  font-family: 'Sora', 'Inter', system-ui, sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: var(--text-dark);
-  margin: 0 0 8px 0;
-}
-
-.team-about-section .keypoint-item p {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--text-dark);
-  margin: 0;
-}
-
-/* Bio Content */
-.team-about-section .team-about-bio {
-  order: 1;
-  text-align: right;
-}
-
-.team-about-section .team-about-bio h2 {
+.property-management-features-header h2 {
   font-family: 'Sora', 'Inter', system-ui, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.3;
   color: var(--text-dark);
-  margin: 0 0 24px 0;
-}
-
-.team-about-section .bio-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.team-about-section .bio-content p {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--text-dark);
-  margin: 0;
-}
-
-/* Desktop Layout - Two Columns */
-@media (min-width: 768px) {
-  .team-about-section {
-    padding: 80px 24px;
-  }
-
-  .team-about-section .team-about-grid {
-    grid-template-columns: 42fr 58fr;
-    gap: 56px;
-    position: relative;
-  }
-
-  /* Vertical Separator Line */
-  .team-about-section .team-about-grid::after {
-    content: '';
-    position: absolute;
-    top: 24px;
-    bottom: 24px;
-    right: 42%;
-    width: 1px;
-    background: var(--border-light);
-    transform: translateX(28px);
-  }
-
-  .team-about-section .team-about-keypoints {
-    order: 1;
-  }
-
-  .team-about-section .team-about-bio {
-    order: 2;
-  }
-
-  .team-about-section .keypoints-card {
-    padding: 36px 32px;
-  }
-
-  .team-about-section .keypoints-content {
-    gap: 32px;
-  }
-
-  .team-about-section .bio-content {
-    gap: 24px;
-  }
-}
-
-/* Mobile Adjustments */
-@media (max-width: 768px) {
-  .team-about-section {
-    padding: 56px 16px;
-  }
-
-  .team-about-section .team-about-grid {
-    gap: 40px;
-  }
-
-  .team-about-section .keypoints-card {
-    padding: 28px 24px;
-  }
-
-  .team-about-section .keypoint-item h3 {
-    font-size: 20px;
-  }
-
-  .team-about-section .team-about-bio h2 {
-    font-size: 28px;
-  }
-}
-
-.team-team-section {
-  position: relative;
-  background: linear-gradient(180deg, #0E1117 0%, #07090D 100%);
-  color: var(--text-light);
-  padding: 88px 16px;
-  direction: rtl;
-  overflow: visible;
-}
-
-.team-team-section .team-team-container {
-  max-width: 1120px;
-  margin: 0 auto;
-}
-
-.team-team-section .team-team-header {
-  text-align: right;
-  margin-bottom: 48px;
-}
-
-.team-team-section .team-team-header h2 {
-  font-family: 'Sora', 'Inter', system-ui, sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.3;
-  color: var(--text-light);
   margin: 0 0 16px 0;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
 }
 
-.team-team-section .team-team-header p {
+.property-management-features-header p {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: var(--text-muted);
+  color: var(--text-dark);
   margin: 0;
-  max-width: 600px;
+  opacity: 0.85;
 }
 
-.team-team-section .team-team-grid {
+.property-management-features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-.team-team-section .team-card {
-  background: rgba(255,255,255,0.03);
+.property-management-feature-tile {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
   border-radius: 2px;
-  border: 1px solid rgba(255,255,255,0.12);
-  overflow: hidden;
-  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  padding: 0;
   position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.team-team-section .team-card::before {
+.property-management-feature-tile::before {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
-  opacity: 0.3;
+  background: var(--primary);
   z-index: 2;
 }
 
-.team-team-section .team-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 34px rgba(0,199,199,0.26);
-  border-color: rgba(0,212,255,0.3);
+.property-management-feature-tile:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
 }
 
-.team-team-section .team-card-image-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 120%;
-  overflow: hidden;
-  background: rgba(0,0,0,0.4);
+.property-management-feature-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.team-team-section .team-card-image-wrapper img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+.property-management-feature-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row-reverse;
 }
 
-.team-team-section .team-card-overlay {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(180deg, rgba(7,9,13,0) 0%, rgba(7,9,13,0.70) 70%, rgba(7,9,13,0.92) 100%);
-  pointer-events: none;
-  z-index: 1;
+.property-management-feature-icon {
+  flex-shrink: 0;
+  color: #FFD166;
 }
 
-.team-team-section .team-card-content {
-  padding: 20px 24px 24px;
+.property-management-feature-top h3 {
+  font-family: 'Sora', 'Inter', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-dark);
+  margin: 0;
   text-align: right;
 }
 
-.team-team-section .team-card-content h3 {
-  font-family: 'Sora', 'Inter', system-ui, sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.4;
-  color: var(--text-light);
-  margin: 0 0 8px 0;
-}
-
-.team-team-section .team-card-role {
+.property-management-feature-content > p {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
-  color: var(--primary);
-  margin: 0 0 12px 0;
-  font-weight: 500;
-}
-
-.team-team-section .team-card-focus {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-dark);
   margin: 0;
+  text-align: right;
+  opacity: 0.80;
+}
+
+.property-management-feature-label {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--text-dark);
+  opacity: 0.50;
+  text-align: right;
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-light);
 }
 
 @media (max-width: 1024px) {
-  .team-team-section .team-team-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+  .property-management-features-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .team-team-section {
-    padding: 60px 16px;
+  .property-management-features-section {
+    padding: 56px 16px;
   }
-  
-  .team-team-section .team-team-header {
-    margin-bottom: 32px;
+
+  .property-management-features-header {
+    margin-bottom: 40px;
   }
-  
-  .team-team-section .team-team-header h2 {
-    font-size: 28px;
+
+  .property-management-features-header h2 {
+    font-size: 26px;
   }
-  
-  .team-team-section .team-team-grid {
+
+  .property-management-features-header p {
+    font-size: 15px;
+  }
+
+  .property-management-features-grid {
     grid-template-columns: 1fr !important;
     gap: 16px;
   }
-  
-  .team-team-section .team-card-content {
-    padding: 16px 20px 20px;
+
+  .property-management-feature-content {
+    padding: 20px;
+    gap: 14px;
   }
-  
-  .team-team-section .team-card-content h3 {
-    font-size: 20px;
+
+  .property-management-feature-top h3 {
+    font-size: 18px;
+  }
+
+  .property-management-feature-content > p {
+    font-size: 14px;
   }
 }
 
-.team-cta-section {
+.property-management-services-section {
+  position: relative;
+  background-color: #0E1117;
+  background-image:
+    radial-gradient(circle at 15% 25%, rgba(0,199,199,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 85% 75%, rgba(211,0,106,0.06) 0%, transparent 50%),
+    linear-gradient(180deg, #0E1117 0%, #07090D 100%);
+  color: var(--text-light);
+  padding: 88px 16px;
+  overflow: visible;
+  padding-bottom: 148px;
+}
+
+.property-management-services-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.property-management-services-header {
+  margin-bottom: 48px;
+  text-align: right;
+}
+
+.property-management-services-header h2 {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  color: rgba(243,245,247,0.94);
+  margin-bottom: 16px;
+}
+
+.property-management-services-intro {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: rgba(174,182,193,0.92);
+  max-width: 680px;
+  margin-inline-start: auto;
+}
+
+.property-management-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  direction: rtl;
+}
+
+.property-management-service-card {
+  position: relative;
+  background: rgba(14,17,23,0.65);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 2px;
+  padding: 26px;
+  transition: all 0.3s ease;
+}
+
+.property-management-service-card:hover {
+  background: rgba(14,17,23,0.85);
+  border-color: rgba(0,199,199,0.3);
+  box-shadow: 0 0 34px rgba(0,199,199,0.16);
+}
+
+.property-management-card-notch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 18px;
+  background: #00C7C7;
+}
+
+.property-management-card-icon {
+  margin-bottom: 18px;
+  color: #FFD166;
+}
+
+.property-management-card-icon svg {
+  display: block;
+}
+
+.property-management-service-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.00em;
+  line-height: 1.25;
+  color: rgba(243,245,247,0.92);
+  margin-bottom: 14px;
+  text-align: right;
+}
+
+.property-management-service-card p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: rgba(174,182,193,0.92);
+  margin-bottom: 12px;
+  text-align: right;
+}
+
+.property-management-service-card p:last-child {
+  margin-bottom: 0;
+}
+
+.property-management-benefit {
+  color: rgba(174,182,193,0.85) !important;
+  font-size: 13px !important;
+  font-style: italic;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: 12px !important;
+}
+
+.property-management-services-divider-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.property-management-services-divider-wrapper svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .property-management-services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .property-management-services-section {
+    padding: 64px 16px;
+    padding-bottom: 124px;
+  }
+
+  .property-management-services-header {
+    margin-bottom: 32px;
+  }
+
+  .property-management-services-header h2 {
+    font-size: 28px;
+  }
+
+  .property-management-services-intro {
+    font-size: 14px;
+  }
+
+  .property-management-services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  .property-management-service-card {
+    padding: 20px;
+  }
+
+  .property-management-card-icon {
+    margin-bottom: 14px;
+  }
+
+  .property-management-service-card h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .property-management-service-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .property-management-benefit {
+    font-size: 13px !important;
+    padding-top: 6px;
+    margin-top: 10px !important;
+  }
+
+  .property-management-services-divider-wrapper {
+    height: 40px;
+  }
+}
+
+.property-management-testimonials-section {
+  position: relative;
+  background: var(--bg-light);
+  color: var(--text-dark);
+  padding: 80px 16px;
+  overflow: visible;
+  direction: rtl;
+}
+
+.property-management-testimonials-container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.property-management-testimonials-header {
+  margin-bottom: 48px;
+  text-align: right;
+}
+
+.property-management-testimonials-header h2 {
+  font-family: 'Sora', 'Inter', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.property-management-testimonials-header p {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-dark);
+  max-width: 720px;
+  margin: 0;
+}
+
+.property-management-testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.property-management-testimonial-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border-light);
+  border-radius: 2px;
+  padding: 28px 24px 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-management-testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.12);
+}
+
+.property-management-testimonial-accent-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background: var(--primary);
+}
+
+.property-management-testimonial-quote {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.property-management-testimonial-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--border-light);
+  margin: 0 0 16px auto;
+}
+
+.property-management-testimonial-attribution {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text-muted);
+  text-align: right;
+  margin: 0;
+}
+
+.property-management-trusted-by {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-light);
+}
+
+.property-management-trusted-logo {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.property-management-trusted-logo:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .property-management-testimonials-section {
+    padding: 56px 16px;
+  }
+
+  .property-management-testimonials-header {
+    margin-bottom: 32px;
+  }
+
+  .property-management-testimonials-header h2 {
+    font-size: 28px;
+  }
+
+  .property-management-testimonials-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .property-management-testimonial-card {
+    padding: 24px 20px 20px;
+  }
+
+  .property-management-trusted-by {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 24px;
+  }
+
+  .property-management-trusted-logo {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .property-management-testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .property-management-testimonial-card:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 12px);
+    margin: 0 auto;
+  }
+
+  .property-management-trusted-by {
+    flex-wrap: wrap;
+    gap: 32px 24px;
+  }
+}
+
+.property-management-cta-section {
   position: relative;
   background: linear-gradient(180deg, #0E1117 0%, #07090D 100%);
   color: var(--text-light);
@@ -900,122 +1076,149 @@
   direction: rtl;
 }
 
-.team-cta-section .team-cta-scanline {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent 0%, var(--primary) 50%, transparent 100%);
-  opacity: 0.4;
+@media (max-width: 768px) {
+  .property-management-cta-section {
+    padding: 56px 16px;
+  }
 }
 
-.team-cta-section .team-cta-container {
-  max-width: 1120px;
+.property-management-cta-section .property-management-cta-container {
+  max-width: 980px;
   margin: 0 auto;
-  padding-top: 16px;
 }
 
-.team-cta-section .team-cta-content {
+.property-management-cta-section .property-management-cta-content {
   text-align: right;
 }
 
-.team-cta-section .team-cta-title {
+.property-management-cta-section .property-management-cta-accent-line {
+  width: 64px;
+  height: 1px;
+  background: var(--primary);
+  margin-bottom: 24px;
+  margin-inline-start: auto;
+}
+
+.property-management-cta-section h2 {
   font-family: 'Sora', 'Inter', system-ui, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 1.3;
   color: var(--text-light);
-  margin: 0 0 16px 0;
+  margin: 0 0 20px 0;
   letter-spacing: 0.01em;
 }
 
-.team-cta-section .team-cta-text {
+@media (max-width: 768px) {
+  .property-management-cta-section h2 {
+    font-size: 26px;
+  }
+}
+
+.property-management-cta-section .property-management-cta-description {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: var(--text-light);
   margin: 0 0 32px 0;
-  opacity: 0.88;
   max-width: 720px;
 }
 
-.team-cta-section .team-cta-buttons {
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 16px;
-  align-items: center;
-  justify-content: flex-end;
+@media (max-width: 768px) {
+  .property-management-cta-section .property-management-cta-description {
+    margin-bottom: 24px;
+  }
 }
 
-.team-cta-section .team-cta-btn {
+.property-management-cta-section .property-management-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .property-management-cta-section .property-management-cta-buttons {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+}
+
+.property-management-cta-section .property-management-cta-btn-primary {
   display: inline-block;
+  background: var(--primary);
+  color: #0B0D12;
+  padding: 14px 28px;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.35);
   font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1;
   text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.team-cta-section .team-cta-btn-primary {
-  background: var(--primary);
-  color: #061014;
-  padding: 14px 28px;
-  border: 1px solid rgba(0,0,0,0.30);
   box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
-.team-cta-section .team-cta-btn-primary:hover {
-  background: #00E8FF;
-  box-shadow: 0 14px 32px rgba(0,212,255,0.45);
+.property-management-cta-section .property-management-cta-btn-primary:hover {
+  background: #00E5FF;
+  box-shadow: 0 14px 32px rgba(0,212,255,0.4);
   transform: translateY(-2px);
 }
 
-.team-cta-section .team-cta-btn-secondary {
-  background: transparent;
-  color: var(--text-light);
-  padding: 13px 27px;
-  border: 1px solid rgba(255,255,255,0.24);
+@media (max-width: 768px) {
+  .property-management-cta-section .property-management-cta-btn-primary {
+    width: 100%;
+    padding: 16px 24px;
+  }
 }
 
-.team-cta-section .team-cta-btn-secondary:hover {
-  background: rgba(255,255,255,0.06);
-  border-color: var(--primary);
-  color: var(--primary);
+.property-management-cta-section .property-management-cta-btn-secondary {
+  display: inline-block;
+  background: transparent;
+  color: var(--text-light);
+  padding: 14px 28px;
+  border-radius: 2px;
+  border: 1px solid rgba(255,255,255,0.24);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.property-management-cta-section .property-management-cta-btn-secondary:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.4);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
-  .team-cta-section {
-    padding: 56px 16px;
-  }
-
-  .team-cta-section .team-cta-title {
-    font-size: 22px;
-    margin-bottom: 12px;
-  }
-
-  .team-cta-section .team-cta-text {
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-
-  .team-cta-section .team-cta-buttons {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
-
-  .team-cta-section .team-cta-btn {
-    text-align: center;
+  .property-management-cta-section .property-management-cta-btn-secondary {
     width: 100%;
+    padding: 16px 24px;
   }
+}
 
-  .team-cta-section .team-cta-btn-primary,
-  .team-cta-section .team-cta-btn-secondary {
-    padding: 14px 24px;
+.property-management-cta-section .property-management-cta-disclaimer {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+  max-width: 680px;
+}
+
+@media (max-width: 768px) {
+  .property-management-cta-section .property-management-cta-disclaimer {
+    font-size: 13px;
   }
 }</style>
     <link rel="stylesheet" href="/styles.css">
@@ -1558,108 +1761,344 @@
 
 </script>
   
-  <main class="blog-page ai-generated-page"><section class="team-hero-section" data-layout-spec="הצוות | משרד עורך דין משה זדה-hero" data-hero-type="fullscreen-scrim">
+  <main class="blog-page ai-generated-page"><section class="property-management-hero-section" data-layout-spec="מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה-hero" data-hero-type="fullscreen-scrim">
   <!-- Background Image Layer -->
-  <div class="team-hero-bg-wrapper">
-    <img data-hero-bg="true" data-context="Professional portrait photograph of a distinguished Israeli lawyer in his 40s-50s, Moshe Zadeh, wearing a sharp dark navy suit with subtle pinstripes and a deep burgundy tie. Shot in a modern law office with dark wood paneling and soft dramatic lighting from the side. The lawyer has a confident, commanding presence with sharp features, salt-and-pepper hair, and piercing intelligent eyes. Background shows blurred bookshelves with legal volumes and a hint of Tel Aviv skyline through floor-to-ceiling windows. Cinematic lighting with strong contrast, professional color grading with deep shadows and warm highlights. High-end corporate photography style, shallow depth of field, shot on medium format camera. The mood is powerful, trustworthy, and sophisticated - conveying the image of a legal strategist who solves complex problems." class="team-hero-bg-image" width="1920" height="1080" src="/assets/section-hero-team-hero-portrait.webp" alt="עורך הדין משה זדה - מומחה לפתרון בעיות משפטיות מורכבות" data-zappy-editable-image="true">
+  <div class="property-management-hero-section__bg-layer">
+    <img data-hero-bg="true" data-context="A cinematic, high-contrast photograph of a modern Israeli residential building complex at dusk. The image should show elegant apartment buildings with clean architectural lines, warm lighting from windows creating a sense of home and community. The foreground could include landscaped courtyards or common areas. The mood should feel secure, professional, and aspirational - conveying trust and expertise in property management. Shot with a wide-angle lens, slightly from below to emphasize the building height and professionalism. Color palette: deep blues of twilight sky, warm amber window lights, cool concrete and glass textures. Style: architectural photography, cinematic, professional, trustworthy." width="1920" height="1080" src="/assets/section-hero-property-management-hero-bg.webp" alt="בניין מגורים מודרני בשעות הערב" data-zappy-editable-image="true">
   </div>
 
-  <!-- Scrim Overlay -->
-  <div class="team-hero-scrim" aria-hidden="true"></div>
+  <!-- Scrim Overlay for Text Legibility -->
+  <div class="property-management-hero-section__scrim" aria-hidden="true"></div>
 
-  <!-- Content Overlay -->
-  <div class="team-hero-content-wrapper">
-    <div class="team-hero-container">
-      <div class="team-hero-grid">
-        <!-- Text Column (Right) -->
-        <div class="team-hero-text-block">
-          <h1 class="team-hero-headline">משה זדה – עורך דין קומנדו</h1>
-          <h3 class="team-hero-subtitle">פתרונות משפטיים יצירתיים לבעיות מורכבות. מומחיות בתיקים אזרחיים ופליליים עם דגש על גישור והסכמות אסטרטגיות.</h3>
-          <div class="team-hero-cta-group">
-            <a href="#contact" class="team-hero-btn-primary">קבעו פגישת ייעוץ</a>
-            <a href="#about" class="team-hero-btn-secondary">למידע נוסף</a>
-          </div>
-        </div>
-
-        <!-- Portrait Tile Column (Left) -->
-        <div class="team-hero-portrait-column">
-          <div class="team-hero-portrait-tile">
-            <div class="team-hero-portrait-frame">
-              <img data-context="Close-up professional headshot of Moshe Zadeh, Israeli lawyer, against a dark charcoal background. Sharp focus on face with dramatic Rembrandt lighting from upper right. He wears a dark suit and burgundy tie, looking directly at camera with a slight confident smile. Expression conveys intelligence, trustworthiness, and strategic thinking. Shot with 85mm lens, f/2.8, creating subtle background blur. High-end corporate portrait with cinematic color grading - deep shadows, warm skin tones, and a hint of cyan in the shadows. Professional retouching maintaining natural texture. The image should feel like a dossier photo - precise, authoritative, and commanding respect." class="team-hero-portrait-img" width="400" height="533" src="/assets/section-hero-team-hero-portrait-tile.webp" alt="משה זדה - עורך דין" data-zappy-editable-image="true">
-              <!-- Corner Markers -->
-              <div class="team-hero-corner-tl" aria-hidden="true"></div>
-              <div class="team-hero-corner-br" aria-hidden="true"></div>
-            </div>
+  <!-- Content Container -->
+  <div class="property-management-hero-section__container">
+    <div class="property-management-hero-section__grid">
+      
+      <!-- Right Column: Primary Text Content -->
+      <div class="property-management-hero-section__text-column">
+        <!-- Decorative Cyan Keyline -->
+        <div class="property-management-hero-section__keyline" aria-hidden="true"></div>
+        
+        <div class="property-management-hero-section__text-content">
+          <h1 class="property-management-hero-section__headline">ניהול נכסים ובתים משותפים ברמה חדשה</h1>
+          <h3 class="property-management-hero-section__subtitle">פתרונות משפטיים מקיפים לניהול מקצועי של נכסים, טיפול בסכסוכים בין דיירים, אכיפת תקנונים ויעוץ משפטי שוטף לועדי בית</h3>
+          
+          <div class="property-management-hero-section__cta-group">
+            <a href="#contact" class="property-management-hero-section__btn-primary">קבעו פגישת ייעוץ</a>
+            <a href="#services" class="property-management-hero-section__btn-secondary">למידע נוסף</a>
           </div>
         </div>
       </div>
+
+      <!-- Left Column: Brief Card Stack -->
+      <div class="property-management-hero-section__cards-column">
+        <div class="property-management-hero-section__brief-card">
+          <h3 class="property-management-hero-section__card-title">ייצוג משפטי מלא</h3>
+          <p class="property-management-hero-section__card-text">טיפול בתביעות, הליכי גבייה ואכיפת זכויות מול דיירים ורשויות</p>
+        </div>
+        
+        <div class="property-management-hero-section__brief-card">
+          <h3 class="property-management-hero-section__card-title">ייעוץ משפטי שוטף</h3>
+          <p class="property-management-hero-section__card-text">ליווי צמוד של ועדי בית, עריכת פרוטוקולים ותיקון תקנונים</p>
+        </div>
+      </div>
+
     </div>
   </div>
 
-  <!-- Bottom Divider -->
-  <div class="team-hero-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <line x1="0" y1="0.5" x2="1200" y2="0.5" stroke="var(--primary)" stroke-width="1" opacity="0.35"></line>
+  <!-- Bottom Divider: Dossier-Style Hairline Segments -->
+  <div class="property-management-hero-section__divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 2" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Three short cyan segments with gaps (dossier divider) -->
+      <line x1="0" y1="1" x2="380" y2="1" stroke="#00D4FF" stroke-width="1" opacity="0.6"></line>
+      <line x1="420" y1="1" x2="780" y2="1" stroke="#00D4FF" stroke-width="1" opacity="0.6"></line>
+      <line x1="820" y1="1" x2="1200" y2="1" stroke="#00D4FF" stroke-width="1" opacity="0.6"></line>
     </svg>
   </div>
 </section>
 
-
-
-<section class="team-team-section" data-layout-spec="הצוות | משרד עורך דין משה זדה-team">
-  <div class="team-team-container">
-    <div class="team-team-header">
-      <h2>הצוות המשפטי</h2>
-      <p>עורכי דין מנוסים ומומחים בעלי מוניטין בתחומם, המציעים ייצוג משפטי ברמה הגבוהה ביותר</p>
+<section class="property-management-features-section" data-layout-spec="מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה-features">
+  <div class="property-management-features-container">
+    <div class="property-management-features-header">
+      <h2>תחומי התמחות במחלקת ניהול נכסים</h2>
+      <p>פתרונות משפטיים מקיפים לבעלי נכסים, ועדי בתים וחברות ניהול – מייעוץ שוטף ועד ייצוג בהליכים משפטיים מורכבים</p>
     </div>
-    <div class="team-team-grid">
-      <article class="team-card">
-        <div class="team-card-image-wrapper">
-          <img data-context="Professional portrait of Moshe Zadeh, Israeli lawyer in his 40s-50s, confident expression, dark suit and tie, shot against neutral background, cinematic lighting, high-end corporate photography style" width="400" height="480" src="/assets/section-team-team-team-image-1.webp" alt="עו״ד משה זדה" data-zappy-editable-image="true">
-          <div class="team-card-overlay"></div>
-        </div>
-        <div class="team-card-content">
-          <h3>עו״ד משה זדה</h3>
-          <p class="team-card-role">מייסד ושותף מנהל</p>
-          <p class="team-card-focus">ליטיגציה אזרחית ומסחרית, פשיטות רגל, דיני עבודה</p>
-        </div>
-      </article>
-      <article class="team-card">
-        <div class="team-card-image-wrapper">
-          <img data-context="Professional portrait of female Israeli lawyer in her 30s-40s, confident and approachable, business attire, shot against neutral background, cinematic lighting, high-end corporate photography style" width="400" height="480" src="/assets/section-team-team-team-image-2.webp" alt="עורכת דין בכירה" data-zappy-editable-image="true">
-          <div class="team-card-overlay"></div>
-        </div>
-        <div class="team-card-content">
-          <h3>עו״ד רונית כהן</h3>
-          <p class="team-card-role">שותפה בכירה</p>
-          <p class="team-card-focus">דיני נדל״ן ובתים משותפים, ייצוג בפני ועדי בית משותף</p>
+    
+    <div class="property-management-features-grid">
+      <article class="property-management-feature-tile">
+        <div class="property-management-feature-content">
+          <div class="property-management-feature-top">
+            <svg class="property-management-feature-icon" data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 4L4 10V22L16 28L28 22V10L16 4Z" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M16 16L4 10" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M16 16V28" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M16 16L28 10" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <h3>ניהול בתים משותפים</h3>
+          </div>
+          <p>ייעוץ משפטי לוועדי בית, עריכת תקנונים, טיפול בסכסוכים בין דיירים, ייצוג בהליכים מול רשויות ותביעות כספיות</p>
+          <div class="property-management-feature-label">תיק: בית משותף</div>
         </div>
       </article>
-      <article class="team-card">
-        <div class="team-card-image-wrapper">
-          <img data-context="Professional portrait of male Israeli lawyer in his 30s, sharp and focused expression, modern business attire, shot against neutral background, cinematic lighting, high-end corporate photography style" width="400" height="480" src="/assets/section-team-team-team-image-3.webp" alt="עורך דין בכיר" data-zappy-editable-image="true">
-          <div class="team-card-overlay"></div>
+
+      <article class="property-management-feature-tile">
+        <div class="property-management-feature-content">
+          <div class="property-management-feature-top">
+            <svg class="property-management-feature-icon" data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="8" width="20" height="18" rx="1" stroke="#FFD166" stroke-width="2"></rect>
+              <path d="M6 14H26" stroke="#FFD166" stroke-width="2"></path>
+              <path d="M12 8V6C12 5.44772 12.4477 5 13 5H19C19.5523 5 20 5.44772 20 6V8" stroke="#FFD166" stroke-width="2"></path>
+              <circle cx="16" cy="20" r="2" fill="#FFD166"></circle>
+            </svg>
+            <h3>ייצוג חברות ניהול</h3>
+          </div>
+          <p>ליווי משפטי שוטף לחברות ניהול, עריכת הסכמים, טיפול בתביעות מול דיירים ובעלי זכויות, ופתרון סכסוכים מורכבים</p>
+          <div class="property-management-feature-label">תיק: חברת ניהול</div>
         </div>
-        <div class="team-card-content">
-          <h3>עו״ד דן לוי</h3>
-          <p class="team-card-role">שותף בכיר</p>
-          <p class="team-card-focus">דיני עבודה וייעוץ משפטי לעסקים, הסכמים מסחריים</p>
+      </article>
+
+      <article class="property-management-feature-tile">
+        <div class="property-management-feature-content">
+          <div class="property-management-feature-top">
+            <svg class="property-management-feature-icon" data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 12L16 6L24 12V24C24 24.5523 23.5523 25 23 25H9C8.44772 25 8 24.5523 8 24V12Z" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M13 25V16H19V25" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="16" cy="4" r="1.5" fill="#FFD166"></circle>
+            </svg>
+            <h3>מקרקעין ונדל"ן</h3>
+          </div>
+          <p>ליווי עסקאות מקרקעין, בדיקת זכויות, טיפול בסכסוכי גבולות ושכנים, ייצוג בהליכי הפקעה ותביעות קנייניות</p>
+          <div class="property-management-feature-label">תיק: מקרקעין</div>
+        </div>
+      </article>
+
+      <article class="property-management-feature-tile">
+        <div class="property-management-feature-content">
+          <div class="property-management-feature-top">
+            <svg class="property-management-feature-icon" data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 6V26" stroke="#FFD166" stroke-width="2" stroke-linecap="round"></path>
+              <path d="M10 12L16 6L22 12" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="8" cy="16" r="2" stroke="#FFD166" stroke-width="2"></circle>
+              <circle cx="24" cy="16" r="2" stroke="#FFD166" stroke-width="2"></circle>
+              <path d="M16 20L10 26M16 20L22 26" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <h3>גביית חובות ואכיפה</h3>
+          </div>
+          <p>טיפול בגביית דמי ניהול, הוצל"פ, עיקולים ושעבודים, הליכי פינוי דיירים ופתרון תשלומים באמצעות גישור ומו"מ</p>
+          <div class="property-management-feature-label">תיק: גבייה</div>
+        </div>
+      </article>
+
+      <article class="property-management-feature-tile">
+        <div class="property-management-feature-content">
+          <div class="property-management-feature-top">
+            <svg class="property-management-feature-icon" data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="6" width="20" height="20" rx="2" stroke="#FFD166" stroke-width="2"></rect>
+              <path d="M6 12H26" stroke="#FFD166" stroke-width="2"></path>
+              <circle cx="11" cy="9" r="1" fill="#FFD166"></circle>
+              <circle cx="15" cy="9" r="1" fill="#FFD166"></circle>
+              <path d="M12 17H20M12 21H18" stroke="#FFD166" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <h3>רישוי ובניה</h3>
+          </div>
+          <p>ליווי הליכי רישוי, השגות על היתרי בניה, ייצוג מול ועדות תכנון, טיפול בבניה בלתי חוקית ותביעות פיצויים</p>
+          <div class="property-management-feature-label">תיק: רישוי</div>
+        </div>
+      </article>
+
+      <article class="property-management-feature-tile">
+        <div class="property-management-feature-content">
+          <div class="property-management-feature-top">
+            <svg class="property-management-feature-icon" data-element-type="icon" data-icon-type="svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="10" stroke="#FFD166" stroke-width="2"></circle>
+              <path d="M16 12V16L19 19" stroke="#FFD166" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M8 8L6 6M24 8L26 6M8 24L6 26M24 24L26 26" stroke="#FFD166" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <h3>גישור ופתרון סכסוכים</h3>
+          </div>
+          <p>הליכי גישור בין בעלי דירות, פתרון סכסוכים ללא משפט, מו"מ מורכב והסכמי פשרה – חיסכון בזמן ובעלויות משפטיות</p>
+          <div class="property-management-feature-label">תיק: גישור</div>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="team-cta-section" data-layout-spec="הצוות | משרד עורך דין משה זדה-cta">
-  <div class="team-cta-scanline"></div>
-  <div class="team-cta-container">
-    <div class="team-cta-content">
-      <h2 class="team-cta-title">מוכנים לפתור את האתגר המשפטי שלכם?</h2>
-      <p class="team-cta-text">צוות המשרד שלנו עומד לרשותכם עם ניסיון, מקצועיות וגישה אסטרטגית ייחודית. בין אם מדובר בתיק אזרחי מורכב או בהגנה פלילית רגישה – אנחנו כאן כדי להוביל אתכם להצלחה.</p>
-      <div class="team-cta-buttons">
-        <a href="/contact" class="team-cta-btn team-cta-btn-primary">צרו קשר עכשיו</a>
-        <a href="/civil" class="team-cta-btn team-cta-btn-secondary">המחלקה האזרחית</a>
+<section class="property-management-services-section" data-layout-spec="מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה-services">
+  <div class="property-management-services-container">
+    <div class="property-management-services-header">
+      <h2>שירותי ניהול נכסים ובתים משותפים</h2>
+      <p class="property-management-services-intro">מחלקה ייעודית המתמחה בפתרון סכסוכים מורכבים בתחום הנדל"ן המגורים והמסחרי, תוך ליווי מקצועי של חברות ניהול, נציגויות ודיירים פרטיים.</p>
+    </div>
+    <div class="property-management-services-grid">
+      <div class="property-management-service-card">
+        <div class="property-management-card-notch"></div>
+        <div class="property-management-card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 5L35 12.5V27.5L20 35L5 27.5V12.5L20 5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M20 5V35M5 12.5L35 27.5M35 12.5L5 27.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3>בתים משותפים – ליווי חברות ניהול ונציגויות</h3>
+        <p>ייצוג משפטי מקיף לחברות ניהול ונציגויות בתים משותפים, כולל ליווי באסיפות, ניהול הליכים מול דיירים, וטיפול בסוגיות משפטיות מורכבות הקשורות לניהול הבניין.</p>
+        <p class="property-management-benefit">תועלת: הגנה משפטית מלאה וייעוץ שוטף המאפשרים ניהול יעיל ומקצועי של הבית המשותף תוך מניעת סכסוכים והליכים משפטיים מיותרים.</p>
       </div>
+      <div class="property-management-service-card">
+        <div class="property-management-card-notch"></div>
+        <div class="property-management-card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 20H30M20 10V30" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2"></circle>
+            <path d="M12 12L28 28M28 12L12 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"></path>
+          </svg>
+        </div>
+        <h3>סכסוכי שכנים</h3>
+        <p>טיפול מקצועי ומדודד בסכסוכים בין שכנים בבתים משותפים, כולל מטרדי רעש, נזקים, שימוש לא ראוי ברכוש המשותף, והפרות תקנון הבית. גישה המשלבת מיומנויות גישור עם אכיפה משפטית.</p>
+        <p class="property-management-benefit">תועלת: פתרון מהיר ויעיל של סכסוכים תוך שמירה על יחסי שכנות ומניעת הסלמה למאבקים משפטיים ממושכים ויקרים.</p>
+      </div>
+      <div class="property-management-service-card">
+        <div class="property-management-card-notch"></div>
+        <div class="property-management-card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="10" width="24" height="24" rx="2" stroke="currentColor" stroke-width="2"></rect>
+            <path d="M8 18H32M16 10V34M24 10V34" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M12 14L14 16L12 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M20 14L22 16L20 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3>ליקויי בנייה</h3>
+        <p>ייצוג רוכשי דירות חדשות וותיקים בתביעות כנגד קבלנים, יזמים וחברות בנייה בגין ליקויי בנייה, כולל איתור הליקויים, הערכת נזקים, ניהול המשא ומתן ותביעות לפיצוי.</p>
+        <p class="property-management-benefit">תועלת: קבלת פיצוי הוגן ותיקון ליקויי הבנייה תוך ניצול מלוא הזכויות המשפטיות ושמירה על ערך הנכס לאורך זמן.</p>
+      </div>
+      <div class="property-management-service-card">
+        <div class="property-management-card-notch"></div>
+        <div class="property-management-card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 8L32 14V26L20 32L8 26V14L20 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M20 20L14 17M20 20L26 17M20 20V26" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle cx="20" cy="26" r="2" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <h3>ייצוג בפני המפקחת על הבתים המשותפים</h3>
+        <p>ליווי והגשת תלונות למפקחת על הבתים המשותפים במקרים של סרבני תשלום, הפרות חוזרות של תקנון הבית, והליכים לקבלת צווי עשה. טיפול מקצועי בכל ההליכים הבירוקרטיים והמשפטיים.</p>
+        <p class="property-management-benefit">תועלת: אכיפה יעילה של זכויות הבית המשותף והנציגות, גביית חובות וטיפול בדיירים בעייתיים באמצעות הסמכות הרגולטורית.</p>
+      </div>
+      <div class="property-management-service-card">
+        <div class="property-management-card-notch"></div>
+        <div class="property-management-card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="12" width="28" height="20" rx="2" stroke="currentColor" stroke-width="2"></rect>
+            <path d="M6 20H34" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M14 12V8C14 6.89543 14.8954 6 16 6H24C25.1046 6 26 6.89543 26 8V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <circle cx="20" cy="26" r="2" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <h3>חוזי שכירות מגורים ונדל"ן מניב</h3>
+        <p>ניסוח וביקורת חוזי שכירות למגורים ולמסחר, ייצוג משכירים ושוכרים בסכסוכים חוזיים, טיפול בהפרות חוזה, ועדכון תנאי שכירות. התאמת החוזים לצרכים הספציפיים ולשינויי החקיקה.</p>
+        <p class="property-management-benefit">תועלת: הגנה משפטית מקסימלית על האינטרסים של בעלי הנכס או השוכר, מניעת סכסוכים עתידיים ויצירת בסיס חוזי ברור ואכיף.</p>
+      </div>
+      <div class="property-management-service-card">
+        <div class="property-management-card-notch"></div>
+        <div class="property-management-card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="24" height="24" rx="2" stroke="currentColor" stroke-width="2"></rect>
+            <path d="M8 20H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M20 8V32" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M14 14L16 16M24 14L26 16M14 24L16 26M24 24L26 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <h3>פירוק שיתוף</h3>
+        <p>ליווי משפטי בהליכי פירוק שיתוף בנכסים משותפים, כולל משא ומתן בין השותפים, הערכת שווי הנכס, ניהול המכירה או החלוקה הפיזית, וייצוג בהליכים משפטיים במידת הצורך.</p>
+        <p class="property-management-benefit">תועלת: סיום מצב השיתוף בצורה מסודרת והוגנת, תוך הגנה על זכויות הלקוח ומקסום הערך הכלכלי של הנכס בתהליך הפירוק.</p>
+      </div>
+      <div class="property-management-service-card">
+        <div class="property-management-card-notch"></div>
+        <div class="property-management-card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6L34 13V27L20 34L6 27V13L20 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M25 18L15 22M15 18L25 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+            <path d="M20 20V28" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <h3>פינוי מושכר</h3>
+        <p>ייצוג בעלי נכסים בהליכי פינוי של דיירים או שוכרים, כולל הליכי פינוי מינהליים ומשפטיים, טיפול בשוכרים מפרי חוזה, חייבי שכירות, ודיירים לא חוקיים. ניהול ההליך מההתראה ועד לביצוע הפינוי בפועל.</p>
+        <p class="property-management-benefit">תועלת: החזרת הנכס לשליטת הבעלים במהירות ובאפקטיביות תוך ניצול כל הכלים המשפטיים הזמינים ומזעור ההפסדים הכלכליים.</p>
+      </div>
+      <div class="property-management-service-card">
+        <div class="property-management-card-notch"></div>
+        <div class="property-management-card-icon">
+          <svg data-element-type="icon" data-icon-type="svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 34C27.732 34 34 27.732 34 20C34 12.268 27.732 6 20 6C12.268 6 6 12.268 6 20C6 27.732 12.268 34 20 34Z" stroke="currentColor" stroke-width="2"></path>
+            <path d="M20 14V20L24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M14 10C14 10 16 8 20 8C24 8 26 10 26 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"></path>
+          </svg>
+        </div>
+        <h3>רטיבויות</h3>
+        <p>טיפול בתביעות הנוגעות לנזקי רטיבות ודליפות במבנים, כולל איתור מקור הבעיה, קביעת אחריות (קבלן, שכן עליון, נציגות), הערכת נזקים, וניהול תביעות פיצויים. שיתוף פעולה עם מומחים טכניים.</p>
+        <p class="property-management-benefit">תועלת: פתרון בעיית הרטיבות והשבת הנכס למצבו התקין תוך קבלת פיצוי מלא עבור הנזקים שנגרמו ומניעת נזקים עתידיים.</p>
+      </div>
+    </div>
+  </div>
+  <div class="property-management-services-divider-wrapper">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,60 L0,30 L400,30 L400,20 L800,20 L800,30 L1200,30 L1200,60 Z" fill="var(--bg-light)"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="property-management-testimonials-section" data-layout-spec="מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה-testimonials">
+  <div class="property-management-testimonials-container">
+    <div class="property-management-testimonials-header">
+      <h2>לקוחות מספרים על הניסיון שלהם</h2>
+      <p>משרד עורך דין משה זדה מתמחה בניהול משפטי של בתים משותפים ונכסים מורכבים. הלקוחות שלנו מעידים על הפתרונות היצירתיים והמקצועיות הגבוהה שמאפיינים את עבודתנו.</p>
+    </div>
+
+    <div class="property-management-testimonials-grid">
+      <div class="property-management-testimonial-card">
+        <div class="property-management-testimonial-accent-line"></div>
+        <p class="property-management-testimonial-quote">"עו״ד זדה פתר סכסוך מורכב בבית המשותף שלנו תוך שבועיים. הגישה המקצועית והיכולת לתווך בין הצדדים הייתה יוצאת דופן. ממליצה בחום!"</p>
+        <div class="property-management-testimonial-divider"></div>
+        <p class="property-management-testimonial-attribution">רחל כהן, יו״ר ועד בית במרכז תל אביב</p>
+      </div>
+
+      <div class="property-management-testimonial-card">
+        <div class="property-management-testimonial-accent-line"></div>
+        <p class="property-management-testimonial-quote">"כשהתמודדנו עם בעיות משפטיות בניהול הנכס, משה זדה הציע פתרון יצירתי שחסך לנו זמן רב וכסף. עורך דין שמבין את הצרכים של בעלי נכסים."</p>
+        <div class="property-management-testimonial-divider"></div>
+        <p class="property-management-testimonial-attribution">דוד לוי, בעל נכס מניב בירושלים</p>
+      </div>
+
+      <div class="property-management-testimonial-card">
+        <div class="property-management-testimonial-accent-line"></div>
+        <p class="property-management-testimonial-quote">"הייעוץ המשפטי שקיבלנו במהלך רכישת הנכס היה מקצועי ומדויק. עו״ד זדה זיהה בעיות פוטנציאליות והציל אותנו מטעויות יקרות. שירות ללא פשרות."</p>
+        <div class="property-management-testimonial-divider"></div>
+        <p class="property-management-testimonial-attribution">שרה אברהם, משקיעה בנדל״ן מסחרי</p>
+      </div>
+    </div>
+
+    <div class="property-management-trusted-by">
+      <div class="property-management-trusted-logo">עיריית תל אביב</div>
+      <div class="property-management-trusted-logo">חברת ניהול פרימיום</div>
+      <div class="property-management-trusted-logo">קבוצת רכישה משותפת</div>
+      <div class="property-management-trusted-logo">איגוד דיירים ארצי</div>
+      <div class="property-management-trusted-logo">מרכז המקצוענים</div>
+    </div>
+  </div>
+</section>
+
+<section class="property-management-cta-section" data-layout-spec="מחלקת ניהול נכסים ובתים משותפים | משרד עורך דין משה זדה-cta">
+  <div class="property-management-cta-container">
+    <div class="property-management-cta-content">
+      <div class="property-management-cta-accent-line"></div>
+      <h2>מוכנים לפתור את הבעיה המשפטית בנכס שלכם?</h2>
+      <p class="property-management-cta-description">בין אם מדובר בסכסוך בין דיירים, חוב ועד, או מחלוקת עם קבלן — אנחנו כאן כדי להביא לפתרון מהיר ויעיל. גישה אסטרטגית, ניסיון רב שנים, והבנה עמוקה של דיני נדל"ן ובתים משותפים.</p>
+      
+      <div class="property-management-cta-buttons">
+        <a href="/contact" class="property-management-cta-btn-primary">צור קשר לייעוץ ראשוני</a>
+        <a href="/contact" class="property-management-cta-btn-secondary">בדיקת מצב משפטי לנכס</a>
+      </div>
+      
+      <p class="property-management-cta-disclaimer">* לצורך בדיקה ראשונית נדרשים מסמכים רלוונטיים: פרוטוקולים, חוזים, התכתבויות, והחלטות ועד. המידע יישמר בסודיות מלאה.</p>
     </div>
   </div>
 </section></main>
