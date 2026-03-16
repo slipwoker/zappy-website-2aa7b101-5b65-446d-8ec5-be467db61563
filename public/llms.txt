@@ -1,0 +1,47 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+משרד עורכי דין מוביל בהובלת עו״ד משה זדה. מומחים לפתרון סכסוכים מורכבים באמצעות אסטרטגיות יצירתיות, ייצוג אזרחי ופלילי, ליווי עסקים וועדי בתים.
+
+### מחלקה אזרחית
+https://example.com/civil
+מחלקה אזרחית מובילה המתמחה בליווי עסקים, ניהול בתים משותפים, דיני עבודה וחדלות פרעון. פתרונות משפטיים מותאמים אישית עם דגש על גישור והסכמות.
+
+### הגנה פלילית
+https://example.com/criminal
+מחלקת הגנה פלילית מומחית בטיפול בתיקים מורכבים כולל פשעי צווארון לבן. ייצוג נחוש ואסטרטגיות הגנה מתקדמות להשגת התוצאות הטובות ביותר ללקוח.
+
+### צור קשר
+https://example.com/contact
+צרו קשר למענה מהיר ומקצועי. משרדנו זמין לייעוץ משפטי בתחומי המשפט האזרחי והפלילי. התקשרו עכשיו לקביעת פגישה עם עורך דין מומחה ופתרון הבעיה שלכם.
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
